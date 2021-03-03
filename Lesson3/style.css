@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+body {
+    display: grid;
+    margin: 0 auto;
+}
+
+button:hover {
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(112, 53, 53);
+    border-bottom: 1px solid black;
+}
+
+header > p {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    /* margin-left: 25px; */
+}
+
+.button_b {
+    max-height: 100px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    display: block;
+    outline: none;
+    border: none;
+}
+
+main {
+    padding-top: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.products {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-self: start;
+}
+
+.products div {
+    display: grid;
+    margin: auto;
+    background: lightgrey;
+    border: 1px solid #000;
+    height: auto;
+    text-align: center;
+}
+
+.basket {
+    transition: 0.5s ease-out;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    border-left: 1px solid black;
+    align-self: start;
+}
+
+.basket div:not(:first-child) {
+    display: grid;
+    margin: auto;
+    background: lightgrey;
+    border: 1px solid #000;
+    height: auto;
+    text-align: center;
+}
+
+.basket_text {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    font-family: "Lato", sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    color: #222222;
+}
+
+#div_word {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 25px;
+    margin-top: 15px;
+}
